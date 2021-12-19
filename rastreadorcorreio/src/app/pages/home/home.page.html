@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      CORREIO
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar color="dark" [(ngModel)]="nome" placeholder="Código de rastreio"
+      (ionChange)="localizarObjeto($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let evento of eventosCollection">
+      <ion-label>
+        <h3 class="ion-text-wrap"><b>{{evento.descricao}}</b></h3>
+        <p class="ion-text-wrap">{{evento.detalhe}}</p>
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>

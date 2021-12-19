@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ion-Button</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Default -->
+  <!-- Sizes -->
+  <ion-button size="small">Small</ion-button>
+  <br>
+  <ion-button>Default</ion-button>
+  <br>
+  <ion-button size="large">Large</ion-button>
+  <br><br>
+
+  <!-- Anchor -->
+  <ion-button href="https://olha.la/ilovecode">Blog</ion-button>
+  <br><br>
+
+  <!-- Colors -->
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+  <ion-button color="success">Success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">Danger</ion-button>
+  <ion-button color="light">Light</ion-button>
+  <ion-button color="medium">Medium</ion-button>
+  <ion-button color="dark">Dark</ion-button>
+  <br><br>
+  <!-- Expand -->
+  <ion-button expand="full">Full Button</ion-button>
+  <ion-button expand="block" color="dark">Block Button</ion-button>
+  <!-- Arredondado -->
+  <ion-button shape="round">Round Button</ion-button>
+
+  <!-- Fill -->
+  <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+  <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+  <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+
+  <br><br>
+  <!-- Icons -->
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    Left Icon
+  </ion-button>
+
+  <ion-button>
+    Right Icon
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+
+<ion-button (click)="enviar()">Botão com evento Click</ion-button>
+
+</ion-content>
